@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chezza Bomediano — Tech Virtual Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <section class="card hero">
+    <div class="top">
+      <div class="brand">
+        <div class="mark">CB</div>
+        <div class="wordmark">CHEZZA BOMEDIANO</div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Me</a>
+        <a href="#tools">Tools</a>
+      </nav>
+    </div>
+
+    <div class="ops-checklist">
+      <h3>Today&rsquo;s ops</h3>
+      <ul>
+        <li><label><input type="checkbox" checked><span>Inbox: zero</span></label></li>
+        <li><label><input type="checkbox" checked><span>Automations: running</span></label></li>
+        <li><label><input type="checkbox"><span>Reports: sent</span></label></li>
+        <li><label><input type="checkbox"><span>Coffee: topped up</span></label></li>
+      </ul>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="stage-inner">
+        <h1 class="line-1">
+          <span class="wobble">H</span><span class="wobble">i</span>
+        </h1>
+        <h1 class="line-2">
+          <span class="wobble">I</span><span class="wobble">&rsquo;</span><span class="wobble">m</span><span class="space"></span><span id="typed"></span><span class="caret"></span>
+        </h1>
+        <p class="tagline">A tech virtual assistant who keeps your ops running and your data clean, organized and on time.</p>
+      </div>
+    </div>
+
+    <div class="corner-links">
+      <div>
+        <a href="mailto:you@example.com">E-mail</a>
+        <a href="#">Resume</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="card" id="services">
+    <div class="sec-head">
+      <h2>What I do</h2>
+      <div class="eyebrow">01 / SERVICES</div>
+    </div>
+    <div class="services-grid" id="services-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="card" id="about">
+    <div class="sec-head">
+      <h2>About me</h2>
+      <div class="eyebrow">02 / ABOUT</div>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="lede">Operations run smoother when someone is actually watching them.</p>
+        <p>That is the role I take on for the teams I work with. I sit inside the day-to-day &mdash; calendars, inboxes, tickets, tools &mdash; and make sure nothing slips while founders and leads stay focused on the work only they can do.</p>
+        <p>I like systems. Give me a messy process and I will turn it into something repeatable, documented, and mostly automatic.</p>
+        <dl class="meta">
+          <dt>Role</dt><dd>Tech Virtual Assistant</dd>
+          <dt>Focus</dt><dd>Ops for agencies</dd>
+          <dt>Based in</dt><dd>[Location]</dd>
+          <dt>Timezone</dt><dd>[GMT offset]</dd>
+          <dt>Reply time</dt><dd>[within 4h]</dd>
+          <dt>Availability</dt><dd class="open">Open to new clients</dd>
+        </dl>
+      </div>
+      <div class="about-side">
+        <img class="about-photo" src="prof.jpeg" alt="Chezza Bomediano">
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="card" id="tools">
+    <div class="sec-head">
+      <h2>Tools I run on</h2>
+      <div class="eyebrow">03 / STACK</div>
+    </div>
+    <div class="tools-grid" id="tools-grid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-top">
+      <div>
+        <h2>Let&rsquo;s take something off your plate.</h2>
+        <p>If your team needs a steady hand on the operational side, I would like to hear about it.</p>
+        <div class="btns">
+          <a class="btn btn-solid" href="mailto:you@example.com">Book a call</a>
+          <a class="btn btn-ghost" href="#">Download resume</a>
+        </div>
+      </div>
+
+      <div class="toss-dock collapsed" id="toss-dock">
+        <button class="toss-tab" id="toss-tab" aria-expanded="false" aria-controls="toss-widget">🗑️</button>
+        <div class="toss-widget" id="toss-widget">
+          <canvas id="toss-canvas" width="300" height="170"></canvas>
+          <p class="toss-score">Makes: <span id="toss-score">0 / 0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>&copy; <span id="year"></span> Chezza Bomediano</div>
+      <nav>
+        <a href="mailto:you@example.com">E-mail</a>
+        <a href="#">Resume</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </footer>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
