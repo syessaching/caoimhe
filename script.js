@@ -231,3 +231,11 @@ document.getElementById("year").textContent = new Date().getFullYear();
     tab.setAttribute("aria-expanded", String(!collapsed));
   });
 })();
+
+/* ---------- deter casual photo saving ---------- */
+(function () {
+  const photo = document.querySelector(".about-photo");
+  if (!photo) return;
+  photo.addEventListener("contextmenu", e => e.preventDefault());
+  photo.addEventListener("dragstart", e => e.preventDefault());
+})();

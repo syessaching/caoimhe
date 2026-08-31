@@ -143,7 +143,11 @@ h1 {
 .about-copy { display: flex; flex-direction: column; gap: 20px; max-width: 720px; }
 .lede { font-size: 23px; line-height: 1.45; font-weight: 600; letter-spacing: -0.015em; margin: 0; }
 .about-copy p { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin: 0; }
-.about-photo { display: block; width: 100%; max-width: 300px; height: auto; border-radius: 12px; margin: 0 0 0 auto; }
+.about-photo {
+  display: block; width: 100%; max-width: 300px; aspect-ratio: 600 / 898; border-radius: 12px;
+  margin: 0 0 0 auto; background: url("prof-web.jpg") center / cover no-repeat;
+  -webkit-user-drag: none; user-select: none;
+}
 .meta {
   display: grid; grid-template-columns: 1fr 1fr; row-gap: 16px; column-gap: 20px;
   font-size: 15px;
